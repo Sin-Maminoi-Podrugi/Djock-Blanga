@@ -1,0 +1,20 @@
+# Python
+*.pyc
+*~
+__pycache__
+# Env
+.env
+my_vena/
+#Database
+db.sqlite3
+# Static folder at project root
+/static/
+
+# Windows
+Thumbs.db*
+ehthumbs*.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+#Pycharm
+.idea/

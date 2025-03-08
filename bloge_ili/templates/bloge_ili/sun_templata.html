@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Головная страница</title>
+</head>
+<body>
+<h1>Главная страница</h1>
+<ul>
+    {% for i in posts %}
+    {% if i.is_publisht %}
+    <li>
+        <h2>
+            {{i.tutle}}
+        </h2>
+        <p>
+            {{i.contentich}}
+        </p>
+        <p>
+            <a href = '{% url "post" i.id %}'>
+                ssulka v sibir... v post
+            </a>
+        </p>
+        {% if not forloop.last %}
+        <hr>
+        {% endif %}
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+</body>
+</html>
